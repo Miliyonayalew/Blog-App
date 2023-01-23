@@ -6,6 +6,6 @@ class PostsController < ApplicationController
 
   # GET /users/:user_id/posts/:id
   def show
-    @post = Post.find(params[:id])
+    params[:id]
   end
 end
