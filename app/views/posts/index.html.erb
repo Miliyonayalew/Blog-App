@@ -1,1 +1,31 @@
-<h1>Here is a list of posts for given user with comments and likes</h1>
+<h1 class="flex justify-center p-5">Users All Posts</h1>
+
+<section class="flex flex-col ">
+  <div class="flex items-center border justify-center mt-5 mb-5  p-5">
+    <div class="mr">
+      <img src="<%= @user.photo %>" class="w-full h-auto rounded-lg"/>
+    </div>
+    <div class="w-2/3 pl-4 flex justify-between">
+        <h2 class=" text-lg font-medium"><%= @user.name %></h2>
+        <span class="text-sm items-end mt-8">Number of posts: <%=@user.posts.count%></span>
+    </div>
+  </div>
+
+  <%@user.posts.each do |post|%>
+    <%= link_to user_post_path(@user, post) do%>
+      <div class="flex flex-col border mt-5 mb-1 pl-3 ">
+        <h3 class="mt-2 mb-2">Post #<%=post.id%></h3>
+        <div class="flex justify-between  p-2">
+          <p class="mt-2 mb-2"><%=post.text%></p>
+          <span>Comments: <%=post.comments_counter%> Likes: <%=post.likes_counter%></span>
+        </div>
+      </div>
+      
+      <div class="border pl-3 mb-5">
+        <%post.recent_five_comments.each do |comment|%>
+          <p><%=comment.author.name%>: <%=comment.text%></p>
+        <%end%>
+      </div>
+    <%end%>
+  <%end%>
+</section>

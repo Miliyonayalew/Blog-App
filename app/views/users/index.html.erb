@@ -1,1 +1,16 @@
-<h1>Here is a list of users posts</h1>
+<h1 class="flex justify-center p-5">Users</h1>
+<section class="flex-row items-center justify-center">
+  <% @users.each do |user| %>
+    <%= link_to user_path(user) do%>
+      <div class="flex mx-10 my-5 items-center justify-center card bg-white p-6 shadow-md rounded-lg ">
+        <div class="mx-5">
+          <img src="<%= user.photo%>" class="w-full h-auto rounded-lg"/>
+        </div>
+        <div class="w-2/3 pl-4 flex justify-between">
+          <h2 class="text-lg text-center font-medium"><%= user.name %></h2>
+          <span class="text-sm items-end mt-8">Number of posts: <%=user.posts.count%></span>
+        </div>
+      </div>
+    <%end%>
+  <% end %>
+</section>
