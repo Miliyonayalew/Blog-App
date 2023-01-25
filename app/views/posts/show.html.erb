@@ -1,1 +1,18 @@
-<h1>Here is a post description of the user</h1>
+<h1 class="flex justify-center p-5">Here is a post description of the user</h1>
+<section class="flex flex-col">
+  <div class="flex flex-col">
+    <div class= "flex flex-col border mt-5 mb-5 p-5">
+      <div class="flex justify-between">
+        <h3 class="text-lg font-medium">Post #<%=@post.id%> by <%=@post.author.name%></h3>
+        <span class="text-sm items-end mt-8">Comments: <%=@post.comments_counter%> Likes: <%=@post.likes_counter%></span>
+      </div>
+      <p class="text-sm items-end mt-8"><%=@post.text%></p>
+    </div>
+
+    <div class="border pl-3 mb-5">
+      <%@post.comments.each do |comment|%>
+        <p><%=comment.author.name%>: <%=comment.text%></p>
+      <%end%>
+    </div>
+  </div>
+</section>

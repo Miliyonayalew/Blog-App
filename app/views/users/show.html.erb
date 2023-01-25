@@ -1,1 +1,35 @@
-<h1>Here is a list of posts for given user</h1>
+<h1 class="flex justify-center p-5">User Post</h1>
+<section class="flex flex-col ">
+  <div class="flex items-center border justify-center mt-5 mb-5">
+    <div class="mr">
+      <img src="<%= @user.photo %>" class="w-full h-auto rounded-lg"/>
+    </div>
+    <div class="w-2/3 pl-4 flex justify-between">
+        <h2 class=" text-lg font-medium"><%= @user.name %></h2>
+        <span class="text-sm items-end mt-8">Number of posts: <%=@user.posts.count%></span>
+    </div>
+  </div>
+
+  <div class="flex flex-col border justify-start p-4 mt-5 mb-5">
+    <h3>Bio</h3>
+    <p><%=@user.bio%></p>
+  </div>
+
+  <%@user.recent_three_posts.each do |post|%>
+    <div class="flex flex-col border mt-5 mb-5 p-3 ">
+      <h3 class="mt-2 mb-2">Post #<%=post.id%></h3>
+      <div class="flex justify-between">
+        <p class="mt-2 mb-2"><%=post.text%></p>
+        <span>Comments: <%=post.comments_counter%> Likes: <%=post.likes_counter%></span>
+      </div>
+    </div>
+  <%end%>
+
+  <div class="flex items-center justify-center mt-5 mb-5 p-3 ">
+    <%=link_to user_posts_path(@user) do%>
+    <button class="bg-blue-500 p-3 rounded-lg text-white mx-auto my-auto">See all posts</button>
+  <%end%>
+
+  </div>
+  
+</section>

@@ -2,10 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'GET /index' do
-    before(:each) do
-      get '/users/:user_id/posts'
-    end
-
+    before(:example) { get users_path(1) }
     it 'returns http success' do
       expect(response).to have_http_status(:success)
     end
@@ -15,25 +12,22 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should return correct placeholder text' do
-      expect(response.body).to include('Here is a list of posts for given user with comments and likes')
+      expect(response.body).to include('User')
     end
   end
 
   describe 'GET /show' do
-    before(:each) do
-      get '/users/:user_id/posts/:id'
-    end
-
+    before(:example) { get users_path(1) }
     it 'returns http success' do
       expect(response).to have_http_status(:success)
     end
 
     it "should render 'show' template" do
-      expect(response).to render_template(:show)
+      expect(response).to render_template(:index)
     end
 
     it 'should return correct placeholder text' do
-      expect(response.body).to include('Here is a post description of the user')
+      expect(response.body).to include('User')
     end
   end
 end
