@@ -1,15 +1,9 @@
+<div>
 <h1 class="flex justify-center p-5">Users All Posts</h1>
-
-<section class="flex flex-col ">
-  <div class="flex items-center border justify-center mt-5 mb-5  p-5">
-    <div class="mr">
-      <img src="<%= @user.photo %>" class="w-full h-auto rounded-lg"/>
-    </div>
-    <div class="w-2/3 pl-4 flex justify-between">
-        <h2 class=" text-lg font-medium"><%= @user.name %></h2>
-        <span class="text-sm items-end mt-8">Number of posts: <%=@user.posts.count%></span>
-    </div>
-  </div>
+<!-- This is the link to show the home page -->
+  <%= render 'shared/home'%>
+  
+  <%= render 'users/user_profile'%>
 
   <%@user.posts.each do |post|%>
     <%= link_to user_post_path(@user, post) do%>
@@ -28,4 +22,4 @@
       </div>
     <%end%>
   <%end%>
-</section>
+</div>
