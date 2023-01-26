@@ -1,0 +1,7 @@
+<div>
+  <%= form_with model: Comment, url: user_post_comments_path(@user, @post), class: "contents" do |form| %>
+    <%= form.label 'Add Comment' %>
+    <%= form.text_area :text, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.submit "Create Comment", class: "rounded-lg mt-3 py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  <% end %>
+</div>
