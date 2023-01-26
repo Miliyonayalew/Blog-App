@@ -1,0 +1,3 @@
+<%= form_with model: Like, url: user_post_likes_path(@user, @post), class: "contents" do |form| %>
+  <%= form.submit "👍", class: "rounded-lg ml-2 mt-6 py-1 px-1 text-white inline-block font-medium text-xs px-3 bg-blue-200 text-red-800 rounded-full cursor-pointer" %>
+<%end%> 

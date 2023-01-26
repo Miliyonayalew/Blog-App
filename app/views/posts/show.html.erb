@@ -6,6 +6,7 @@
       <div class="flex justify-between">
         <h3 class="text-lg font-medium">Post #<%=@post.id%> by <%=@post.author.name%></h3>
         <span class="text-sm items-end mt-8">Comments: <%=@post.comments_counter%> Likes: <%=@post.likes_counter%></span>
+        <%= render 'likes/like'%>
       </div>
       <p class="text-sm items-end mt-8"><%=@post.text%></p>
     </div>
@@ -15,5 +16,7 @@
         <p><%=comment.author.name%>: <%=comment.text%></p>
       <%end%>
     </div>
+
+    <%= render 'comments/form'%>
   </div>
 </div>
