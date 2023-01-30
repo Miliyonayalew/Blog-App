@@ -47,7 +47,7 @@ After you're finished please remove all the comments and instructions!
     - [Usage](#usage)
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
-  - [👤 Author ](#-author-)
+  - [👤 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -160,13 +160,20 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👤 Author <a name="authors"></a>
+## 👤 Authors <a name="authors"></a>
 
 👤 **Miliyon Ayalew**
 
 - GitHub: [@Miliyonayalew](https://github.com/Miliyonayalew/)
 - Twitter: [@Miliyonayalew](https://twitter.com/MilaAyalew)
 - LinkedIn: [Miliyonayalew](https://www.linkedin.com/in/miliyon-ayalew-210808131/)
+  
+👤 **Marco Oquendo**
+
+- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC). 
+- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc). 
+- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/MarcoOquendoC/). 
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
