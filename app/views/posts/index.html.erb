@@ -3,7 +3,7 @@
 <!-- This is the link to show the home page -->
   <%= render 'shared/home'%>
   
-  <%= render 'users/user_profile'%>
+  <%= render 'users/user_profile', user: @user%>
 
   <%@user.posts.each do |post|%>
     <%= link_to user_post_path(@user, post) do%>

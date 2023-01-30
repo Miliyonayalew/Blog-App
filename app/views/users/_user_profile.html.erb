@@ -1,10 +1,10 @@
 <div class="flex items-center justify-center card bg-white p-6 shadow-md rounded-lg ">
   <div class="mx-5">
-    <img src="<%= @user.photo %>" alt="img" class="h-40 w-50 rounded-full object-cover"/>
+    <img src="<%= user.photo %>" alt="img" class="h-40 w-50 rounded-full object-cover"/>
   </div>
   <div class="w-2/3 pl-4 flex justify-between">
-    <h2 class="text-lg text-center font-medium"><%= @user.name %></h2>
-    <span class="text-sm items-end mt-12">Number of posts: <%=@user.posts.count%></span>
+    <h2 class="text-lg text-center font-medium"><%= user.name %></h2>
+    <span class="text-sm items-end mt-12">Number of posts: <%=user.posts.count%></span>
   </div>
 </div>
   

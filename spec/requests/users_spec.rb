@@ -14,7 +14,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it "renders 'index' template" do
-      expect(response).to render_template('index')
+      expect(response).to render_template(:index)
     end
 
     it 'should return correct placeholder text' do
@@ -34,7 +34,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it "renders 'show' template" do
-      expect(response).to render_template('show')
+      expect(response).to render_template(:show)
     end
 
     it 'should return correct placeholder text' do
