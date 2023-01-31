@@ -154,7 +154,6 @@ You can deploy this project using:
 
 
 - [ ] **Search Blog Posts**
-- [ ] **Filter Post Content Before Publish**
 - [ ] **Edit a Post**
 - [ ] **Delete a Post**
 
@@ -186,10 +185,11 @@ If you like this project or find it useful, please consider giving it a ⭐️. 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
