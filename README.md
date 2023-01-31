@@ -1,36 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-<!--
-<div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
--->
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -40,6 +9,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -47,11 +17,11 @@ After you're finished please remove all the comments and instructions!
     - [Usage](#usage)
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
-  - [👤 Author ](#-author-)
+  - [👤 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -89,11 +59,13 @@ Blog app is a classic example of a blog website. That allows you to create new p
 - **[Show a Posts]**
 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Not available yet.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -131,7 +103,9 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  rails server or rails s
+  ./bin/dev or bin/dev with tailwind build
+  
+  rails server or rails s 
 ```
 
 
@@ -141,37 +115,47 @@ To run tests, run the following command:
 
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  rspec
 ```
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
 ```sh
-
+  not available yet
 ```
- -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👤 Author <a name="authors"></a>
+## 👤 Authors <a name="authors"></a>
 
 👤 **Miliyon Ayalew**
 
 - GitHub: [@Miliyonayalew](https://github.com/Miliyonayalew/)
 - Twitter: [@Miliyonayalew](https://twitter.com/MilaAyalew)
 - LinkedIn: [Miliyonayalew](https://www.linkedin.com/in/miliyon-ayalew-210808131/)
+  
+👤 **Marco Oquendo**
+
+- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC). 
+- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc). 
+- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/MarcoOquendoC/). 
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Search Blog Posts**
+- [ ] **Edit a Post**
+- [ ] **Delete a Post**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,7 +165,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Miliyonayalew/Blog-App/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,9 +173,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project or find it useful, please consider giving it a ⭐️. Thanks!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,24 +181,15 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
+- [Microverse](https://www.microverse.org/)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
