@@ -11,11 +11,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-slate-100">
-    <main class="container flex mx-auto justify-center mt-15 px-5">
-      <%= yield %>
+  <body class="bg-slate-100 container flex mx-auto justify-center mt-15 px-5">
+    <main >
+    <div class="mt-10 text-lg mb-0 mr-4">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
+    </div>
+      <%= yield %>
     </main>
   </body>
 </html>
