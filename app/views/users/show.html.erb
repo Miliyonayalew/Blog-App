@@ -10,7 +10,8 @@
 
   <div class="flex justify-between">
     <%= render 'users/all_posts'%>
-
+    <% if current_user.id == @user.id %>
     <%= render 'users/create_post'%>
+    <% end %>
 </div>
 </div>
