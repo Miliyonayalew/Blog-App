@@ -14,6 +14,12 @@
     <div class="border pl-3 mb-5">
       <%@comments.includes(:author).each do |comment|%>
         <p><%=comment.author.name%>: <%=comment.text%></p>
+        <% if can? :destroy, comment %>
+          <%= link_to "Delete p", user_post_comment_path(comment.author, @post, comment),
+          data: { turbo_method: :delete, turbo_confirm: "Are you  suer?"},
+          class: "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" 
+          %>
+          <%end%>
       <%end%>
     </div>
 
