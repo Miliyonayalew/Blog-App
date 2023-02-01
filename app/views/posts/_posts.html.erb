@@ -1,6 +1,6 @@
 <% if current_user %>
       <h2 class="mt-3">Welcome <%= current_user.name %></h2>
-      <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "mt-2 button button-gradient text-white bg-gray-500 border hover:text-gray-500 hover:border-gray-500 hover:bg-transparent", 'data-ripple-light': true, data: { turbo: false } %>
+      <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "bg-red-500 hover:bg-red-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline pointer-events-auto", 'data-ripple-light': true, data: { turbo: false } %>
 <% end %>
   <% user.each do |user| %>
     <%= link_to user_path(user) do%>

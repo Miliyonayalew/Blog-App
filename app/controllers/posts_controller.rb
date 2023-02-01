@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @user = User.find(params[:user_id])
   end
@@ -24,6 +26,14 @@ class PostsController < ApplicationController
     else
       flash[:error] = 'Post not created'
       render :new
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id]).destroy
+
+    respond_to do |format|
+      format.html { redirect_to user_path(current_user), notice: 'Post successfully destroyed.' }
     end
   end
 
