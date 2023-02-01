@@ -12,25 +12,28 @@
         <div class="flex justify-between  p-2">
     <%end%>
           <p class="mt-2 mb-2"><%=post.text%></p>
-          <span>Comments: <%=post.comments_counter%> Likes: <%=post.likes_counter%></span>
+          <span>💬 <%=post.comments_counter%> 👍 <%=post.likes_counter%>
           <% if can? :destroy, post %>
-          <%= link_to "Delete", user_post_path(@user, post), 
+          <%= link_to "🗑️", user_post_path(@user, post), 
           data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, 
           class: "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" 
           %>
+          </span>
         <%end%>
         </div>
       </div>
       
       <div class="border pl-3 mb-5">
         <%post.recent_five_comments.each do |comment|%>
+        <div class="flex justify-between mt-2 mb-2">
           <p><%=comment.author.name%>: <%=comment.text%></p>
           <% if can? :destroy, comment %>
-          <%= link_to "Delete p", user_post_comment_path(@user, post, comment),
-          data: { turbo_method: :delete, turbo_confirm: "Are you  suer?"},
+          <%= link_to "🗑️", user_post_comment_path(@user, post, comment),
+          data: { turbo_method: :delete, turbo_confirm: "Are you  sure?"},
           class: "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" 
           %>
             <%end%>
+          </div>
         <%end%>
       </div>
   <%end%>
