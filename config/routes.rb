@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     end
   end
 
+# Api endpoints
+
   namespace :api do
     namespace :v1 do
       resources :users do
